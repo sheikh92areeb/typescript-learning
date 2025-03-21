@@ -5,7 +5,7 @@ const processData = (input) => {
         return input.toLowerCase();
     }
     else {
-        const result = input.reduce((a, b) => a + b);
+        const result = input.length ? input.reduce((a, b) => a + b) : 0;
         return result;
     }
 };
